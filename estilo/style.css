@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --color001: #19191a;
+    --color002: #111111;
+    --color003: rgb(85, 121, 155);
+
+    --font001: "Outfit", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    font-family: var(--font001);
+}
+
+header {
+    background-color: var(--color001);
+    color: white;
+    width: 100vw;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30%;
+    padding: 30px;
+}
+
+nav .logo {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 50px;
+    list-style: none;
+}
+
+nav ul a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+nav ul a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+#hero-section {
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color001);
+}
+
+.hero-content {
+    justify-content: left;
+    padding: 50px;
+    color: white;
+    width: 650px;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 50px;
+}
+
+span {
+    color: var(--color003);
+}
+
+.hero-content p {
+    color: #aaaaaa;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.cta-button {
+    color: rgb(42, 55, 68);
+    text-decoration: none;
+    background-color: var(--color003);
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: rgb(61, 98, 134);
+}
+
+.hero-image {
+    width: 560px;
+    height: 700px;
+    background-color: var(--color001);
+    background-image: url(../imagens/image006.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    transform: translateY(50px);
+}
+
+#boards {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boards h1 {
+    transform: translateX(-70%);
+    color: #111111;
+    font-size: 4.5rem;
+    padding: 40px;
+}
+
+.boards ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.boards div {
+    background-color: white;
+    width: 400px;
+    height: 500px;
+}
+
+.item1 {
+    background: var(--color001) url(../imagens/prancha1/board1.png) no-repeat center center;
+}
+
+.item2 {
+    background: var(--color001) url(../imagens/prancha2/board2.png) no-repeat center center;
+}
+
+.item3 {
+    background: var(--color001) url(../imagens/prancha3/board3.png) no-repeat center center;
+}
+
+.boards a {
+    text-decoration: none;
+}
+
+.boards p {
+    color: #4e4e4e;
+    
+}
+
