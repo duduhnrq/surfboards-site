@@ -18,6 +18,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -77,6 +78,10 @@ nav ul a:hover::after {
     width: 100%;
 }
 
+main {
+    width: 100vw;
+}
+
 #hero-section {
     width: 100vw;
     height: 600px;
@@ -100,7 +105,7 @@ nav ul a:hover::after {
     margin-bottom: 50px;
 }
 
-span {
+.hero-content h1 span {
     color: var(--color003);
 }
 
@@ -134,13 +139,13 @@ span {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    transform: translateY(50px);
+    margin-top: 100px;
 }
 
 #boards {
     width: 100vw;
     height: 100vh;
-    margin-top: 100px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,6 +159,14 @@ span {
     padding: 40px;
 }
 
+#boards span {
+    color: var(--color003);
+}
+
+.boards {
+    text-align: center;
+}
+
 .boards ul {
     display: flex;
     justify-content: center;
@@ -164,19 +177,19 @@ span {
 
 .boards div {
     background-color: white;
-    width: 400px;
+    width: 500px;
     height: 500px;
 }
 
-.item1 {
+.prancha1 {
     background: var(--color001) url(../imagens/prancha1/board1.png) no-repeat center center;
 }
 
-.item2 {
+.prancha2 {
     background: var(--color001) url(../imagens/prancha2/board2.png) no-repeat center center;
 }
 
-.item3 {
+.prancha3 {
     background: var(--color001) url(../imagens/prancha3/board3.png) no-repeat center center;
 }
 
@@ -186,6 +199,74 @@ span {
 
 .boards p {
     color: #4e4e4e;
-    
+}
+
+.boards h2 {
+    color: var(--color001);
+}
+
+.btn {
+    cursor: pointer;
+    font-family: var(--font001);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    background-color: #d3d3d3;
+    color: var(--color001);
+    padding: 20px;
+    margin: 20px;
+    width: 120px;
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--color001);
+    color: #d3d3d3;
+}
+
+#sponsored {
+    color: white;
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color001);
+} 
+
+.sponsored-image {
+    width: 560px;
+    height: 700px;
+    background-color: var(--color001);
+    background-image: url(../imagens/florence.png);
+    background-repeat: no-repeat;
+    background-position: ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sponsored-content {
+    width: 650px;
+    margin-bottom: 250px;
+    padding: 50px;
+}
+
+.sponsored-content h1 {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.sponsored-content h1 span {
+    color: var(--color003);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.sponsored-content p {
+    margin-bottom: 10px;
+    color: #aaaaaa;
 }
 
