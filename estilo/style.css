@@ -134,11 +134,10 @@ main {
     width: 560px;
     height: 700px;
     background-color: var(--color001);
-    background-image: url(../imagens/image006.jpg);
+    background-image: url(../imagens/boards.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
     margin-top: 100px;
 }
 
@@ -165,6 +164,7 @@ main {
 
 .boards {
     text-align: center;
+    margin-bottom: 60px;
 }
 
 .boards ul {
@@ -242,9 +242,8 @@ main {
     background-color: var(--color001);
     background-image: url(../imagens/florence.png);
     background-repeat: no-repeat;
-    background-position: ;
+    background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .sponsored-content {
