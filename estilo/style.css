@@ -182,15 +182,30 @@ main {
 }
 
 .prancha1 {
-    background: var(--color001) url(../imagens/prancha1/board1.png) no-repeat center center;
+    background: #fff url(../imagens/prancha1/board1.png) no-repeat center center;
+    transition: all .3s ease-in-out;
+}
+
+.prancha1:hover {
+    background: #fff url(../imagens/prancha1/board_back1.png) no-repeat center center;
 }
 
 .prancha2 {
-    background: var(--color001) url(../imagens/prancha2/board2.png) no-repeat center center;
+    background: #fff url(../imagens/prancha2/board2.png) no-repeat center center;
+    transition: all .3s ease-in-out;
+}
+
+.prancha2:hover {
+    background: #fff url(../imagens/prancha2/board_back2.png) no-repeat center center;
 }
 
 .prancha3 {
-    background: var(--color001) url(../imagens/prancha3/board3.png) no-repeat center center;
+    background: #fff url(../imagens/prancha3/board3.png) no-repeat center center;
+    transition: all .3s ease-in-out;
+}
+
+.prancha3:hover {
+    background: #fff url(../imagens/prancha3/board_back3.png) no-repeat center center;
 }
 
 .boards a {
