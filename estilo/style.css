@@ -249,6 +249,7 @@ main {
     justify-content: center;
     align-items: center;
     background-color: var(--color001);
+    scroll-margin-top: 170px;
 } 
 
 .sponsored-image {
@@ -263,17 +264,26 @@ main {
 
 .sponsored-content {
     width: 650px;
-    margin-bottom: 250px;
+    margin-bottom: 10%;
     padding: 50px;
 }
 
-.sponsored-content h1 {
+#sponsored h1 {
+    font-size: 4.5rem;
+    padding: 30px 0px;
+}
+
+#sponsored h1 span {
+    color: var(--color003);
+}
+
+.sponsored-content h2 {
     margin-bottom: 30px;
     font-size: 1.8rem;
     font-weight: 500;
 }
 
-.sponsored-content h1 span {
+.sponsored-content h2 span {
     color: var(--color003);
     font-weight: 300;
     font-style: italic;
@@ -284,3 +294,64 @@ main {
     color: #aaaaaa;
 }
 
+footer {
+    color: #fff;
+    background-color: #313131;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container2 {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    line-height: 30px;
+}
+
+.container2 ul {
+    list-style-type: none;
+}
+
+.container2 h2 {
+    padding-bottom: 20px;
+}
+
+.container2 hr {
+    border: solid 1px #494949;
+    margin: 10px 0px;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.info a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sociais {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    filter: invert();
+    padding-top: 20px;
+}
+
+.sociais img {
+    width: 30px;
+    cursor: pointer;
+}
+
+footer p {
+    text-align: center;
+    padding: 30px;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
