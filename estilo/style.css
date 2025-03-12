@@ -18,10 +18,10 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
+    overflow-x: hidden;
     background-color: white;
     font-family: var(--font001);
 }
