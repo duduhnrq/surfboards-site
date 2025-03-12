@@ -42,9 +42,13 @@ nav {
 }
 
 nav .logo {
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    cursor: pointer;
+    width: 150px;
 }
 
 nav ul {
@@ -83,7 +87,7 @@ main {
 }
 
 #hero-section {
-    width: 100vw;
+    max-width: 100vw;
     height: 600px;
     display: flex;
     justify-content: center;
@@ -95,7 +99,7 @@ main {
     justify-content: left;
     padding: 50px;
     color: white;
-    width: 650px;
+    max-width: 650px;
 }
 
 .hero-content h1 {
@@ -241,7 +245,7 @@ main {
     color: #d3d3d3;
 }
 
-#sponsored {
+#atletas {
     color: white;
     width: 100vw;
     height: 600px;
@@ -252,7 +256,7 @@ main {
     scroll-margin-top: 170px;
 } 
 
-.sponsored-image {
+.atletas-image {
     width: 560px;
     height: 700px;
     background-color: var(--color001);
@@ -262,34 +266,34 @@ main {
     background-size: cover;
 }
 
-.sponsored-content {
+.atletas-content {
     width: 650px;
     margin-bottom: 10%;
     padding: 50px;
 }
 
-#sponsored h1 {
+#atletas h1 {
     font-size: 4.5rem;
     padding: 30px 0px;
 }
 
-#sponsored h1 span {
+#atletas h1 span {
     color: var(--color003);
 }
 
-.sponsored-content h2 {
+.atletas-content h2 {
     margin-bottom: 30px;
     font-size: 1.8rem;
     font-weight: 500;
 }
 
-.sponsored-content h2 span {
+.atletas-content h2 span {
     color: var(--color003);
     font-weight: 300;
     font-style: italic;
 }
 
-.sponsored-content p {
+.atletas-content p {
     margin-bottom: 10px;
     color: #aaaaaa;
 }
@@ -302,6 +306,10 @@ footer {
 footer a {
     color: #fff;
     text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 .container2 {
@@ -325,15 +333,6 @@ footer a {
     margin: 10px 0px;
 }
 
-.logo {
-    font-size: 30px;
-}
-
-.info a:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
 .sociais {
     display: flex;
     gap: 20px;
@@ -352,6 +351,32 @@ footer p {
     padding: 30px;
 }
 
-footer p a:hover {
-    text-decoration: underline;
+@media (max-width: 1280px) {
+    #hero-section {
+        flex-direction: column;
+        height: 100vh;
+        justify-content: flex-start;
+    }
+    
+    .hero-image {
+        margin-top: 0px;
+        position: absolute;
+        transform: translate(0%, 90%);
+        height: 520px;
+    }
+
+    #boards {
+        margin-top: 40px;
+        height: auto;
+    }
+
+    #boards h1 {
+        padding: 80px;
+        transform: translateX(0%);
+    }
+
+    .boards ul{
+        flex-direction: column;
+    }
 }
+
