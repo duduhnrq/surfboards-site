@@ -466,6 +466,7 @@ footer p {
     #atletas {
         box-shadow: inset 0 -120px #313131;
         height: 850px;
+        scroll-margin-top: 0;
     }
 
     .atletas-container {
