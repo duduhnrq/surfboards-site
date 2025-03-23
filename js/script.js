@@ -44,11 +44,11 @@ const mobileNavbar = new MobileNavbar(
 mobileNavbar.init();
 
 document.addEventListener('DOMContentLoaded', function () {
-    const heroContent = document.querySelector('.hero-content');
-    const heroImage = document.querySelector('.hero-image');
-    setTimeout(() => {
-        heroContent.classList.add('visible');
-        heroImage.classList.add('visible');
-    }, 100);
+  const heroContent = document.querySelector('.hero-content');
+  const heroImage = document.querySelector('.hero-image');
+  setTimeout(() => {
+    heroContent.classList.add('visible');
+    heroImage.classList.add('visible');
+  }, 100);
 });
 
