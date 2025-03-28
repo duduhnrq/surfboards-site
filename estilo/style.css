@@ -370,6 +370,10 @@ main {
     color: #aaaaaa;
 }
 
+.next {
+    display: none;
+}
+
 /*RODAPÉ*/
 
 footer {
