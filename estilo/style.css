@@ -353,19 +353,19 @@ main {
 }
 
 
-.atletas-content h2 {
+.atletas-txt h2 {
     padding-bottom: 30px;
     font-size: 1.8rem;
     font-weight: 500;
 }
 
-.atletas-content h2 span {
+.atletas-txt h2 span {
     color: var(--color003);
     font-weight: 300;
     font-style: italic;
 }
 
-.atletas-content p {
+.atletas-txt p {
     margin-bottom: 10px;
     color: #aaaaaa;
 }
@@ -545,7 +545,7 @@ footer p {
         padding-bottom: 10px;
     }
 
-    .atletas-content p {
+    .atletas-txt p {
         padding-bottom: 0;
     }
 

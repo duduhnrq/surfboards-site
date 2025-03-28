@@ -52,3 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }, 100);
 });
 
+function next() {
+  let txt = document.querySelector('.atletas-content h2')
+  txt.innerHTML = '<h2>Taro Watanabe <span>California, EUA</span></h2>'
+}
