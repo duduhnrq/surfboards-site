@@ -199,8 +199,7 @@ main {
 
 #boards {
     width: 100%;
-    height: 100vh;
-
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,7 +212,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1200px;
+    width: 100%;
 }
 
 .boards h1 {
@@ -309,37 +308,31 @@ main {
 #atletas {
     color: #fff;
     width: 100%;
-    height: 700px;
+    height: 100vh;
     background-color: var(--color001);
-    box-shadow: inset 0 120px #fff;
     display: flex;
     justify-content: center;
-    scroll-margin-top: 60px;
 }
 
 .atletas-container { 
-    width: 1200px;
-    height: 700px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    display: flex;
     align-items: center;
-    gap: 50px;
-    padding: 0px 20px 0px 20px;
+    gap: 3rem;
 }
 
 .atletas-image {
-    max-width: 560px;
-    height: 700px;
+    width: 50%;
+    height: 100%;
     background-color: var(--color001);
     background-image: url(../imagens/florence.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    border-radius: 5px;
 }
 
 .atletas-content {
-    max-width: 650px;
+    width: 50%;
     padding-top: 30px;
 }
 
@@ -430,6 +423,15 @@ footer p {
     padding: 30px;
 }
 
+/*MEDIA QUERIES*/
+
+@media (max-width: 1400px) {
+    .boards-items ul {
+        gap: 0;
+        margin-bottom: 2rem;
+    }
+}
+
 @media (max-width: 1280px) {
     #boards {
         height: auto;
@@ -516,31 +518,23 @@ footer p {
         height: 300px;
     }
 
+    .boards-items ul {
+        gap: 2rem;
+        margin-bottom: 0;
+    }
+
     #boards h1 {
         font-size: 2.8rem;
     }
-
-    #atletas {
-        box-shadow: inset 0 -120px #313131;
-        height: 750px;
-        scroll-margin-top: 0;
-    }
-
+    
     .atletas-container {
-        gap: 30px;
-        grid-template-columns: 1fr;
-    }
-
-    .atletas-image {
-        max-width: 850px;
-        max-height: 300px;
-        order: 2;
+        gap: 1rem;
+        flex-direction: column-reverse;
     }
 
     .atletas-content {
+        width: 90%;
         padding-top: 0;
-        max-width: 850px;
-        order: 1;
     }
 
     .atletas-content h1 {
@@ -553,16 +547,16 @@ footer p {
         padding-bottom: 0;
     }
 
+    .atletas-image {
+        width: 100%;
+    }
+
     .container2 {
         padding-top: 0px;
     }
 }
 
 @media (max-width: 660px) {
-    #atletas {
-        height: 830px;
-    }
-
     .container2 {
         padding: 20px;
         gap: 30px;
