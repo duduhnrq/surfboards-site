@@ -124,6 +124,7 @@ main {
     padding-bottom: 200px;
     color: white;
     max-width: 650px;
+    min-width: 350px;
 }
 
 .hero-content h1 {
@@ -204,8 +205,8 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
     color: var(--color001);
+    scroll-margin: 110px;
 }
 
 .boards {
@@ -234,6 +235,7 @@ main {
     align-items: center;
     gap: 40px;
     list-style: none;
+    margin-bottom: 2rem;
 }
 
 .boards-items div {
@@ -416,6 +418,11 @@ footer a:hover {
 .sociais img {
     width: 30px;
     cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.sociais img:hover {
+   filter: brightness(0) saturate(100%) invert(20%) sepia(0%) saturate(0%) hue-rotate(154deg) brightness(102%) contrast(91%);
 }
 
 footer p {
@@ -428,7 +435,6 @@ footer p {
 @media (max-width: 1400px) {
     .boards-items ul {
         gap: 0;
-        margin-bottom: 2rem;
     }
 }
 
